@@ -1,5 +1,5 @@
 <template>
-    <div class="container m-auto">
+    <div class="container m-auto mt-3">
         <div class="navbar bg-base-100 p-0">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -27,6 +27,15 @@
                 </ul>
             </div>
             <div class="navbar-end">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                    <input type="text" placeholder="جست و جوی دوره ها..."
+                        class="border-2 h-14 rounded-full p-3 w-60 ml-5 mr-2 outline-yellow-300">
+                </div>
                 <div class="dropdown dropdown-bottom dropdown-end">
                     <div tabindex="0" role="button" class="m-1">
                         <div class="avatar">
