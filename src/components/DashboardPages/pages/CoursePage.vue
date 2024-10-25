@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Teleport to="title">ThermoLearnDash | دوره های موجود</Teleport>
         <div class="flex justify-between">
             <div>
                 <h1 class="text-4xl font-extrabold">دوره ها</h1>

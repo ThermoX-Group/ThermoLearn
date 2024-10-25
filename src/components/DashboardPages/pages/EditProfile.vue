@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Teleport to="title">ThermoLearnDash | ویرایش پروفایل</Teleport>
         <h1 class="text-4xl font-bold">ویرایش پروفایل</h1>
         <div class="flex items-center justify-start">
             <div class="relative">

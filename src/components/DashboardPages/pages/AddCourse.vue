@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Teleport to="title">ThermoLearnDash | اضافه کردن دوره</Teleport>
         <Transition>
             <AddEpisodeModal @addEpisode="addEpisodeFunc" @closeModal="showModal = false"
                 :data="courseData.courseSeasons[indexArrayVar]" v-if="showModal">
