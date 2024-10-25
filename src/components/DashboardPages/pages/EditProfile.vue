@@ -116,7 +116,6 @@ export default {
     }
 }
 </script>
-
 <style scoped>
 .v-enter-active,
 .v-leave-active {
