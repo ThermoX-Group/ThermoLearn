@@ -1,6 +1,10 @@
 <template>
     <MainHeader v-if="!hideHeader"></MainHeader>
-    <router-view></router-view>
+    <router-view v-slot="{ Component }">
+        <transition>
+            <component :is="Component" />
+        </transition>
+    </router-view>
 </template>
 
 <script>
@@ -50,3 +54,15 @@ export default {
     }
 }
 </script>
+
+<style>
+.page-transition-enter-active,
+.page-transition-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.page-transition-enter,
+.page-transition-leave-to {
+    opacity: 0;
+}
+</style>
