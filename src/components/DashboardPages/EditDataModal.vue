@@ -2,7 +2,7 @@
     <div class="fixed top-0 right-0 w-full h-full z-20">
         <div class="blur w-full h-full" @click="$emit('closeModal')"></div>
         <div
-            class="bg-base-300 absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 py-3 px-5 rounded-xl w-2/3 h-3/4 overflow-scroll lg:w-1/2 lg:h-auto lg:overflow-visible">
+            class="bg-base-300 absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 py-3 px-5 rounded-xl w-4/5 h-4/5 overflow-scroll lg:w-1/2 lg:h-auto lg:overflow-visible">
             <div class="flex justify-between items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6 cursor-pointer" @click="$emit('closeModal')">
