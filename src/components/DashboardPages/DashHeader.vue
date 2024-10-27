@@ -1,8 +1,23 @@
 <template>
-    <div class="bg-yellow-300 w-1/4 fixed h-screen pt-3 pr-3 hidden flex-col justify-between lg:flex xl:w-1/5">
-        <div>
-            <router-link class="text-3xl block text-center" to="/">ThermoLearn</router-link>
-            <ul class="mt-7 text-lg">
+    <div class="drawer relative bg-none lg:hidden z-10">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+            <!-- Page content here -->
+            <label for="my-drawer" class="drawer-button bg-yellow-300 btn btn-circle h-14 w-14 m-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                </svg>
+            </label>
+        </div>
+        <div class="drawer-side">
+            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+            <ul class=" bg-yellow-300 text-base-content h-screen w-64 p-4 pl-0 relative">
+                <!-- Sidebar content here -->
+                <li class="text-center text-xl mb-5">
+                    <router-link to="/">Thermolearn</router-link>
+                </li>
                 <li class=" mb-2">
                     <router-link
                         class="hover:bg-yellow-200 py-3 px-5 transition flex items-center gap-2 rounded-tr-full rounded-br-full"
@@ -44,16 +59,20 @@
                         ویرایش اطلاعات
                         کاربری</router-link>
                 </li>
+                <li class="flex justify-center bottom-0 absolute left-1/2 -translate-x-1/2">
+                    <p v-if="userDatas === ''" class="text-center mb-10 text-xl">در حال بارگذاری...</p>
+                    <p v-else-if="userDatas == null" class="text-center mb-10 text-xl">اطلاعات از پایگاه داده دریافت
+                        نشد!</p>
+                    <div class="flex flex-col items-center ml-3 text-md mb-3 rounded-tr-xl rounded-tl-xl"
+                        v-else-if="userDatas">
+                        <img src="https://secure.gravatar.com/avatar/3b3c0692f559018fd28befadf7ca88ed?s=256&d=mm&r=g"
+                            v-if="!userDatas.profile" class="w-24 h-24 rounded-full" alt="">
+                        <img :src=userDatas.profile class="w-24 h-24 rounded-full" alt="" v-else>
+                        <h2 class="mb-1 mt-3 text-center">{{ userDatas.username }}</h2>
+                        <p>{{ userDatas.email }}</p>
+                    </div>
+                </li>
             </ul>
-        </div>
-        <p v-if="userDatas === ''" class="text-center mb-10 text-xl">در حال بارگذاری...</p>
-        <p v-else-if="userDatas == null" class="text-center mb-10 text-xl">اطلاعات از پایگاه داده دریافت نشد!</p>
-        <div class="flex flex-col items-center ml-3 text-md mb-3 rounded-tr-xl rounded-tl-xl" v-else-if="userDatas">
-            <img src="https://secure.gravatar.com/avatar/3b3c0692f559018fd28befadf7ca88ed?s=256&d=mm&r=g"
-                v-if="!userDatas.profile" class="w-24 h-24 rounded-full" alt="">
-            <img :src=userDatas.profile class="w-24 h-24 rounded-full" alt="" v-else>
-            <h2 class="mb-1 mt-3 text-center">{{ userDatas.username }}</h2>
-            <p>{{ userDatas.email }}</p>
         </div>
     </div>
 </template>
@@ -69,14 +88,9 @@ export default {
     }
 }
 </script>
-
 <style>
-.router-link-active {
-    background: white;
-    transition: all .3s;
-}
-
-.router-link-active:hover {
-    background: white;
+.drawer {
+    backdrop-filter: blur(5px) saturate(180%);
+    background-color: rgba(253, 224, 71, 0.34);
 }
 </style>

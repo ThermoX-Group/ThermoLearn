@@ -1,8 +1,9 @@
 <template>
     <div class=" relative">
         <SidebarDashboard></SidebarDashboard>
+        <DashHeader class=""></DashHeader>
         <router-view v-slot="{ Component }"
-            class="absolute left-0 w-4/5 mr-10 p-5 h-screen overflow-y-auto overflow-x-hidden">
+            class="absolute left-0 w-full mr-10 p-5 h-screen overflow-y-auto overflow-x-hidden lg:w-3/4 xl:w-4/5 mt-20 lg:mt-0">
             <transition>
                 <component :is="Component" />
             </transition>
@@ -11,10 +12,13 @@
 </template>
 
 <script>
+import DashHeader from '../DashHeader.vue';
 import SidebarDashboard from '../SidebarDashboard.vue';
+
 export default {
     components: {
-        SidebarDashboard
+        SidebarDashboard,
+        DashHeader
     },
     setup() {
 

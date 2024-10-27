@@ -7,7 +7,7 @@
             </AddEpisodeModal>
         </Transition>
         <h1 class="font-extrabold text-4xl">اضافه کردن دوره</h1>
-        <div class="grid grid-cols-2 mt-5 gap-5">
+        <div class="grid grid-cols-1 mt-5 gap-5 md:grid-cols-2">
             <div>
                 <label for="name" class="text-2xl">نام دوره</label>
                 <input type="text" id="name" placeholder="نام دوره را وارد کنید..."
