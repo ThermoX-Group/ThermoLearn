@@ -5,7 +5,7 @@
         <p class="text-2xl font-semibold mb-5 mt-3">{{ userDatas.username }} عزیز،خوش اومدی😊</p>
         <div>
             <h2 class="text-3xl mb-3">اطلاعات کاربری شما:</h2>
-            <div class="grid grid-cols-4 gap-10 text-white font-bold">
+            <div class="grid grid-cols-1 gap-10 text-white font-bold md:grid-cols-2 xl:grid-cols-4">
                 <InformationCard v-for="card in cardsData" :class="card.bgColor" :key="card.title">
                     <template #icon>
                         <i

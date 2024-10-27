@@ -1,15 +1,15 @@
 <template>
     <div>
         <Teleport to="title">ThermoLearnDash | دوره های موجود</Teleport>
-        <div class="flex justify-between">
+        <div class="block justify-between xl:flex">
             <div>
                 <h1 class="text-4xl font-extrabold">دوره ها</h1>
                 <p v-if="courses !== ''"> دوره های موجود : {{ displayedCourse.length }} دوره</p>
             </div>
-            <input v-if="courses !== ''" type="search" class="border-2 rounded-full w-10/12 p-3 outline-yellow-300"
+            <input v-if="courses !== ''" type="search" class="border-2 rounded-full w-full p-3 outline-yellow-300 xl:w-10/12 mt-2 xl:m-0"
                 placeholder="جست جوی دوره ها..." v-model="searchValue">
         </div>
-        <transition-group name="slide" tag="div" class="grid grid-cols-4 mt-10 gap-5">
+        <transition-group name="slide" tag="div" class="grid grid-cols-1 mt-10 gap-5 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
             <DashboardCard v-for="item in displayedCourse" :key="item[0]" :data="item" @openModalReq="openModalFunc"
                 @deleteReq="acceptDeleteFunc">
             </DashboardCard>

@@ -5,7 +5,7 @@
             <h1 class="text-4xl lg:text-6xl font-extrabold leading-relaxed">آکادمی آموزش برنامه نویسی ترمولرن</h1>
             <p class="text-2xl font-semibold mt-5">با آکادمی خصوصی ترمولرن، علم برنامه نویسی رو با خیال راحت یاد بگیر و
                 پیشرفت کن</p>
-            <div class="flex items-center m-auto gap-2 mt-5">
+            <div class="flex items-center m-auto gap-2 mt-5 justify-center lg:justify-start">
                 <router-link to="/">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor"
