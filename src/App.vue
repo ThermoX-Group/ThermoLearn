@@ -1,6 +1,6 @@
 <template>
     <MainHeader v-if="!hideHeader"></MainHeader>
-    <router-view v-slot="{ Component }">
+    <router-view v-slot="{ Component }" >
         <transition>
             <component :is="Component" />
         </transition>

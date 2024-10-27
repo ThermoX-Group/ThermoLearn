@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-base-200">
         <Teleport to="title">ThermoLearnDash | ویرایش پروفایل</Teleport>
         <h1 class="text-4xl font-bold">ویرایش پروفایل</h1>
         <div class=" items-center justiy-start lg:flex">
@@ -19,7 +19,7 @@
                 <div class="mb-5 lg:mr-20 lg:mb-0" v-if="showInp">
                     <label for="img">لینک عکس</label>
                     <div>
-                        <input type="text" id="img" class="border-2 outline-yellow-300 rounded-full w-96 mt-3 p-2"
+                        <input type="text" id="img" class="border-2 outline-yellow-300 rounded-full w-96 mt-3 p-2 bg-base-100"
                             placeholder="لینک عکس را وارد کنید..." v-model="datas.profile">
                         <span class="text-2xl mr-3 cursor-pointer" @click="showInp = false">x</span>
                     </div>
@@ -31,13 +31,13 @@
                 <div>
                     <label for="username" class="block mb-3">نام کاربری</label>
                     <input type="text" id="username"
-                        class="border-2 outline-yellow-300 transition-all p-2 rounded-full w-full"
+                        class="border-2 outline-yellow-300 transition-all p-2 rounded-full w-full bg-base-100 border-gray-400"
                         placeholder="نام کاربری را وارد کنید..." v-model="datas.username">
                 </div>
                 <div>
                     <label for="email" class="block mb-3">ایمیل</label>
                     <input type="email" id="email"
-                        class="border-2 outline-yellow-300 transition-all p-2 rounded-full w-full"
+                        class="border-2 outline-yellow-300 transition-all p-2 rounded-full w-full bg-base-100 border-gray-400"
                         placeholder="example@gmail.com" v-model="datas.email">
                 </div>
             </div>

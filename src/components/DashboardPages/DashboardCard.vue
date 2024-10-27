@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-base-200 rounded-2xl flex flex-col justify-between relative overflow-hidden">
+    <div class="bg-base-100 rounded-2xl flex flex-col justify-between relative overflow-hidden">
         <div>
             <router-link to="/">
                 <img class="rounded-2xl mb-2" :src=data[1].img :alt=data[1].courseName>
