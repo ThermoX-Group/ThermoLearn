@@ -17,7 +17,7 @@
                     </template>
                 </InformationCard>
             </div>
-            <div class="flex justify-between items-start gap-5 mt-5 place-content-center">
+            <div class="grid grid-cols-1 items-start gap-5 mt-5 place-content-center md:grid-cols-2">
                 <LastCourses></LastCourses>
                 <LastQuestions></LastQuestions>
             </div>

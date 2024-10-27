@@ -9,7 +9,7 @@
                 <img :src=datas.profile class="w-40 h-40 rounded-full my-5" alt="" v-else>
                 <svg @click="showInp = true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke-width="1.5" stroke="currentColor"
-                    class="size-12 p-1.5 absolute -bottom-2 border-4 border-white right-3 bg-yellow-300  flex items-center justify-center text-lg cursor-pointer rounded-full transition hover:bg-yellow-400 lg:bottom-3">
+                    class="size-12 p-1.5 absolute -bottom-2 border-4 border-white right-3 bg-yellow-300 text-black  flex items-center justify-center text-lg cursor-pointer rounded-full transition hover:bg-yellow-400 lg:bottom-3">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M7.5 7.5h-.75A2.25 2.25 0 0 0 4.5 9.75v7.5a2.25 2.25 0 0 0 2.25 2.25h7.5a2.25 2.25 0 0 0 2.25-2.25v-7.5a2.25 2.25 0 0 0-2.25-2.25h-.75m0-3-3-3m0 0-3 3m3-3v11.25m6-2.25h.75a2.25 2.25 0 0 1 2.25 2.25v7.5a2.25 2.25 0 0 1-2.25 2.25h-7.5a2.25 2.25 0 0 1-2.25-2.25v-.75" />
                 </svg>
@@ -43,7 +43,7 @@
             </div>
         </form>
         <button
-            class="w-full bg-yellow-300 mt-5 p-2 rounded-full cursor-pointer transition hover:bg-yellow-400 outline-none"
+            class="w-full bg-yellow-300 text-black mt-5 p-2 rounded-full cursor-pointer transition hover:bg-yellow-400 outline-none"
             @click="sendData">{{ btnText }}</button>
         <p class="text-3xl text-center mt-5" v-if="showUpdateText">{{ updateText }}</p>
         <LoadingComp class="fixed bottom-2 left-4 text-yellow-300" v-if="userDatas == ''"></LoadingComp>

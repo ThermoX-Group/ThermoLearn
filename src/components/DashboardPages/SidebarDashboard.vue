@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-yellow-300 w-1/4 fixed h-screen pt-3 pr-3 hidden flex-col justify-between lg:flex xl:w-1/5">
+    <div class="bg-yellow-300 text-black w-1/4 fixed h-screen pt-3 pr-3 hidden flex-col justify-between lg:flex xl:w-1/5">
         <div>
             <router-link class="text-3xl block text-center" to="/">ThermoLearn</router-link>
             <ul class="mt-7 text-lg">
@@ -70,7 +70,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .router-link-active {
     background: white;
     transition: all .3s;

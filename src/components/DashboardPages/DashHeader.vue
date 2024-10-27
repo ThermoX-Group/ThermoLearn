@@ -5,7 +5,7 @@
             <!-- Page content here -->
             <label for="my-drawer" class="drawer-button bg-yellow-300 btn btn-circle h-14 w-14 m-3">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
+                    stroke="currentColor" class="size-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
                 </svg>
@@ -13,7 +13,7 @@
         </div>
         <div class="drawer-side">
             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-            <ul class=" bg-yellow-300 text-base-content h-screen w-64 p-4 pl-0 relative">
+            <ul class=" bg-yellow-300 text-basecontent h-screen w-64 p-4 pl-0 relative text-black">
                 <!-- Sidebar content here -->
                 <li class="text-center text-xl mb-5">
                     <router-link to="/">Thermolearn</router-link>
@@ -88,7 +88,16 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
+.router-link-active {
+    background: white;
+    transition: all .3s;
+}
+
+.router-link-active:hover {
+    background: white;
+}
+
 .drawer {
     backdrop-filter: blur(5px) saturate(180%);
     background-color: rgba(253, 224, 71, 0.34);

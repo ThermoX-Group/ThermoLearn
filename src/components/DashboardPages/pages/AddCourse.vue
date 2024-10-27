@@ -56,10 +56,10 @@
                 <label for="seasons">سرفصل های دوره:</label>
                 <div class="flex items-end gap-5">
                     <input type="text" id="seasons" placeholder="سرفصل های دوره را وارد کنید..."
-                        class="w-3/4 border-2 rounded-full p-2 outline-yellow-300 mt-2" v-model="courseSeasonsText"
+                        class="w-3/5 border-2 rounded-full p-2 outline-yellow-300 mt-2 lg:w-3/4" v-model="courseSeasonsText"
                         @keyup.enter="addSeason">
                     <button @click="addSeason"
-                        class="bg-yellow-300 w-1/4 h-full p-2.5 rounded-full transition hover:bg-yellow-400">اضافه
+                        class="bg-yellow-300 text-black w-2/5 h-full p-2.5 rounded-full transition hover:bg-yellow-400 lg:w-1/4">اضافه
                         کردن سرفصل</button>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                     @openModal="findSeason"></AccordionComp>
             </div>
         </div>
-        <button @click="addCourse" class="bg-yellow-300 transition hover:bg-yellow-400 w-full rounded-full p-2 mt-5">
+        <button @click="addCourse" class="bg-yellow-300 text-black transition hover:bg-yellow-400 w-full rounded-full p-2 mt-5">
             {{ btnText }}
         </button>
     </div>
