@@ -1,9 +1,9 @@
 <template>
-    <div class="drawer relative bg-none lg:hidden z-10">
+    <div class="drawer relative bg-yellow-300 lg:hidden z-10">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
             <!-- Page content here -->
-            <label for="my-drawer" class="drawer-button bg-yellow-300 btn btn-circle h-14 w-14 m-3">
+            <label for="my-drawer" class="drawer-button bg-yellow-300 btn border-none h-14 w-14 m-3">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -100,6 +100,6 @@ export default {
 
 .drawer {
     backdrop-filter: blur(5px) saturate(180%);
-    background-color: rgba(253, 224, 71, 0.34);
+    /* background-color: rgba(253, 224, 71, 0.34); */
 }
 </style>
