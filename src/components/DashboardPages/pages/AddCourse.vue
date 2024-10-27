@@ -11,43 +11,43 @@
             <div>
                 <label for="name" class="text-2xl">نام دوره</label>
                 <input type="text" id="name" placeholder="نام دوره را وارد کنید..."
-                    class="block w-full border-2 rounded-full p-2 outline-yellow-300 mt-2"
+                    class="block w-full border-2 border-gray-500 rounded-full p-2 outline-yellow-300 mt-2"
                     v-model="courseData.courseName">
             </div>
             <div>
                 <label for="des" class="text-2xl">توضیحات دوره</label>
                 <textarea id="des" placeholder="توضیحات دوره را وارد کنید..."
-                    class="block w-full border-2 rounded-xl p-2 outline-yellow-300 mt-2"
+                    class="block w-full border-2 border-gray-500 rounded-xl p-2 outline-yellow-300 mt-2"
                     v-model="courseData.courseDes"></textarea>
             </div>
             <div>
                 <label for="reprerequisite" class="text-2xl">پیش نیاز دوره</label>
                 <input type="text" id="reprerequisite" placeholder="پیش نیاز دوره را وارد کنید..."
-                    class="block w-full border-2 rounded-full p-2 outline-yellow-300 mt-2"
+                    class="block w-full border-2 border-gray-500 rounded-full p-2 outline-yellow-300 mt-2"
                     v-model="courseData.courseReprerequisite">
             </div>
             <div>
                 <label for="time" class="text-2xl">مدت زمان تقریبی دوره</label>
                 <input type="number" id="time" placeholder=" مدت زمان دوره را وارد کنید..."
-                    class="block w-full border-2 rounded-full p-2 outline-yellow-300 mt-2"
+                    class="block w-full border-2 border-gray-500 rounded-full p-2 outline-yellow-300 mt-2"
                     v-model="courseData.courseTime">
             </div>
             <div>
                 <label for="price" class="text-2xl"> قیمت دوره</label>
                 <input type="number" id="price" placeholder="قیمت دوره را وارد کنید..."
-                    class="block w-full border-2 rounded-full p-2 outline-yellow-300 mt-2"
+                    class="block w-full border-2 border-gray-500 rounded-full p-2 outline-yellow-300 mt-2"
                     v-model="courseData.coursePrice">
             </div>
             <div>
                 <label for="teacher" class="text-2xl"> مدرس دوره</label>
                 <input type="text" id="teacher" placeholder="مدرس دوره را وارد کنید..."
-                    class="block w-full border-2 rounded-full p-2 outline-yellow-300 mt-2 cursor-not-allowed" disabled
+                    class="block w-full border-2 border-gray-500 rounded-full p-2 outline-yellow-300 mt-2 cursor-not-allowed" disabled
                     :value=userDatas.username>
             </div>
             <div>
                 <label for="img" class="text-2xl"> کاور دوره</label>
                 <input type="text" id="img" placeholder="مدرس دوره را وارد کنید..."
-                    class="block w-full border-2 rounded-full p-2 outline-yellow-300 mt-2" v-model=courseData.img>
+                    class="block w-full border-2 border-gray-500 rounded-full p-2 outline-yellow-300 mt-2" v-model=courseData.img>
             </div>
         </div>
         <div class="mt-5">
@@ -55,7 +55,7 @@
                 <label for="seasons">سرفصل های دوره:</label>
                 <div class="flex items-center gap-5 flex-col md:flex-row">
                     <input type="text" id="seasons" placeholder="سرفصل های دوره را وارد کنید..."
-                        class="w-full border-2 rounded-full p-2 outline-yellow-300 mt-2 md:w-3/4"
+                        class="w-full border-2 border-gray-500 rounded-full p-2 outline-yellow-300 mt-2 md:w-3/4"
                         v-model="courseSeasonsText" @keyup.enter="addSeason">
                     <button @click="addSeason"
                         class="bg-yellow-300 text-black w-full h-full p-2.5 rounded-full transition hover:bg-yellow-400 md:w-1/4">اضافه
