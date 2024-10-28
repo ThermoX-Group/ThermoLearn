@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-base-200">
+    <div class="bg-base-300">
         <Teleport to="title">ThermoLearnDash | دوره های موجود</Teleport>
         <div class="block justify-between xl:flex">
             <div>

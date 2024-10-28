@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-base-200">
+    <div class="bg-base-300">
         <Teleport to="title">ThermoLearnDash | ویرایش پروفایل</Teleport>
         <h1 class="text-4xl font-bold">ویرایش پروفایل</h1>
         <div class=" items-center justiy-start lg:flex">

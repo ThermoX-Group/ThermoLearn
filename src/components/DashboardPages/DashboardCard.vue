@@ -8,7 +8,7 @@
                 <router-link to="/">
                     <h4 class="text-lg font-bold">{{ data[1].courseName }}</h4>
                 </router-link>
-                <p class="des line-clamp-2 mt-1 ">{{ data[1].courseDes }}</p>
+                <p class="line-clamp-2 mt-1 ">{{ data[1].courseDes }}</p>
             </div>
         </div>
         <div class="p-3 pt-0 flex flex-col  justify-between">
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <div class="absolute right-3 px-3 py-1 bg-glass opacity-90 text-white rounded-lg w-2/3 transition-all duration-300"
+        <div class="absolute right-3 px-3 py-1 bg-glass opacity-90 text-white rounded-lg w-2/3 transition-all duration-300 border"
             :class="{ 'bottom-2': deleteMode, '-bottom-16': !deleteMode }">
             <button @click="$emit('deleteReq', data), btnText = 'درحال حذف کردن...'" class="block w-full text-right">{{
                 btnText }}</button>

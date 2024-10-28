@@ -14,7 +14,7 @@
                 </div>
                 <div class="drawer-side">
                     <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-                    <ul class=" bg-yellow-300 text-basecontent h-screen w-64 p-4 pl-0 relative text-black">
+                    <ul class=" bg-yellow-300 text-basecontent h-full w-64 p-4 pl-0 text-black">
                         <!-- Sidebar content here -->
                         <li class="text-center text-xl mb-5">
                             <router-link to="/">Thermolearn</router-link>

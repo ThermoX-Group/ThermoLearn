@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-base-200">
+    <div class="bg-base-300">
         <Teleport to="title">ThermoLearnDash | اضافه کردن دوره</Teleport>
         <Transition>
             <AddEpisodeModal @addEpisode="addEpisodeFunc" @closeModal="showModal = false"

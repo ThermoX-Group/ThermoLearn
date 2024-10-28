@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-base-200">
+    <div class="bg-base-300">
         <Teleport to="title">ThermoLearnDash | پیشخوان</Teleport>
         <h1 class="font-extrabold text-4xl">پیشخوان</h1>
         <p class="text-2xl font-semibold mb-5 mt-3">{{ userDatas.username }} عزیز،خوش اومدی😊</p>
